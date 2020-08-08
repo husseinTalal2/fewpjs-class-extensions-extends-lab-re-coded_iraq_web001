@@ -2,6 +2,7 @@
 class Polygon {
   constructor(sidesArr){
     this.sidesArr = sidesArr
+    this.count = this.sidesArr.length
   }
   get countSides() {
     return this.sidesArr.length;
@@ -13,5 +14,11 @@ class Polygon {
       sum+=this.sidesArr[i];
     }
     return sum;
+  }
+}
+
+class Triangle extends Polygon {
+  get isValid(){
+    
   }
 }
