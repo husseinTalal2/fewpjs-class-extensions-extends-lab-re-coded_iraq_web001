@@ -9,7 +9,7 @@ class Polygon {
   get perimeter() {
     if(!Array.isArray(this.sidesArr)) return;
     let sum=0;
-    for(let i=0; i<this.countSides() ; i++){
+    for(let i=0; i<this.sidesArr.length ; i++){
       sum+=this.sidesArr[i];
     }
     return sum;
